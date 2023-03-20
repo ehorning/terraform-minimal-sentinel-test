@@ -1,3 +1,8 @@
+provider "google" {
+  project     = var.project
+  region      = var.region
+}
+
 resource "google_compute_instance" "default" {
   name         = var.instance_name
   machine_type = var.instance_size
